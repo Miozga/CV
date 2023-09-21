@@ -70,6 +70,9 @@ section {
   display: flex;
   align-items: center;
   padding: 0 9%;
+  background: url(images) no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .home-content {
   max-width: 60rem;
@@ -169,4 +172,28 @@ section {
   background: transparent;
   border: 0.2rem solid var(--main-color);
   border-radius: 50%;
+  font-size: 27px;
+  color: var(--main-color);
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.home-sci a:hover {
+  color: var(--bg-color);
+}
+
+.home-sci a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: var(--main-color);
+  z-index: -1;
+  transition: 0.5s;
+}
+.home-sci a:hover::before {
+  width: 100%;
 }
