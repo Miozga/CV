@@ -16,12 +16,17 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <script src="./script/script.js" defer></script>
   </head>
   <body>
     <header class="header">
-      <a href="#" class="logo">Sebastian Miozga</a>
+      <a href="#" class="logo"
+        >Sebastian Miozga <span class="animate" style="--i: 1"></span
+      ></a>
 
-      <div class="bx bx-menu" id="menu-icon"></div>
+      <div class="bx bx-menu" id="menu-icon">
+        <span class="animate" style="--i: 2"></span>
+      </div>
 
       <nav class="navbar">
         <a href="#home" class="active">Dom</a>
@@ -31,23 +36,31 @@
         <a href="#contact">Kontakt</a>
 
         <span class="active-nav"></span>
+        <span class="animate" style="--i: 2"></span>
       </nav>
     </header>
 
-    <section class="home" id="home">
+    <section class="home show-animate" id="home">
       <div class="home-content">
-        <h1>Witam, nazywam się <span>Sebastian Miozga</span></h1>
+        <h1>
+          Witam, nazywam się <span>Sebastian Miozga</span>
+          <span class="animate" style="--i: 2"></span>
+        </h1>
         <div class="text-animate">
           <h3>Fullstack developer</h3>
+
+          <span class="animate" style="--i: 3"></span>
         </div>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
           nesciunt?
+          <span class="animate" style="--i: 4"></span>
         </p>
 
         <div class="btn-box">
           <a href="#" class="btn">Współpraca</a>
           <a href="#" class="btn">Napisz</a>
+          <span class="animate" style="--i: 5"></span>
         </div>
       </div>
 
@@ -55,20 +68,26 @@
         <a href="#"><i class="bx bxl-facebook-circle"></i></a>
         <a href="#"><i class="bx bx-x"></i></a>
         <a href="#"><i class="bx bxl-linkedin"></i></a>
+        <span class="animate" style="--i: 6"></span>
       </div>
 
       <div class="home-imgHover"></div>
+      <span class="animate home-img" style="--i: 7"></span>
     </section>
 
     <section class="about" id="about">
-      <h2 class="heading">O <span>Mnie</span></h2>
+      <h2 class="heading">
+        O <span>Mnie</span><span class="animate scroll" style="--i: 1"></span>
+      </h2>
 
       <div class="about-img">
         <img src="./images/about.jpg" alt="#" />
         <span class="circle-spin"></span>
+        <span class="animate scroll" style="--i: 2"></span>
       </div>
       <div class="about-content">
         <h3>Fullstack developer</h3>
+        <span class="animate scroll" style="--i: 3"></span>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro illo
           animi ab quis laudantium temporibus reiciendis nisi, eligendi ducimus
@@ -282,6 +301,5 @@
         <a href="#"><i class="bx bx-up-arrow-alt"></i></a>
       </div>
     </footer>
-    <script src="./script/script.js"></script>
   </body>
 </html>

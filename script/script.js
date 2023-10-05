@@ -23,6 +23,12 @@ window.onscroll = () => {
           .querySelector("header nav a[href*=" + id + "]")
           .classList.add("active");
       });
+
+      sec.classList.add("show-animate");
+    }
+    //if want to use animationthatrepeats on scroll use this//
+    else {
+      sec.classList.remove("show-animate");
     }
   });
   let header = document.querySelector("header");
