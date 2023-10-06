@@ -17,23 +17,27 @@ window.onscroll = () => {
     let id = sec.getAttribute("id");
 
     if (top >= offset && top < offset + height) {
+      /*----------------------------------------------------------------------------------active navbar links*/
       navLinks.forEach((links) => {
         links.classList.remove("active");
         document
           .querySelector("header nav a[href*=" + id + "]")
           .classList.add("active");
       });
-
+      /*----------------------------------------------------------------------active section for animation on scroll*/
       sec.classList.add("show-animate");
     }
-    //if want to use animationthatrepeats on scroll use this//
+    //--------------------------------------------------------------if want to use animation that repeats on scroll use this//
     else {
       sec.classList.remove("show-animate");
     }
   });
+
+  /*-------------------------------------------------------------------------------------Sticky header-*/
   let header = document.querySelector("header");
   header.classList.toggle("sticky", window.scrollY > 100);
-  // remove toggle icon and navbar when click navabar links (scroll)//
+
+  //----------------------------------------- remove toggle icon and navbar when click navabar links (scroll)//
   menuIcon.classList.remove("bx-x");
   navbar.classList.remove("active");
 };
